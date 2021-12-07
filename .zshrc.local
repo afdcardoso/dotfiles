@@ -1,0 +1,28 @@
+neofetch
+export PATH=$PATH:/home/cacete/.local/bin
+
+alias pip='pip3'
+alias ls='exa -1laB --git --group-directories-first'
+alias lt='exa -1laBT --git --group-directories-first'
+
+alias ...='../..'
+
+#Pacman Shortcuts
+alias sync="sudo pacman -Syyy"
+alias install="sudo pacman -S"
+alias update="sudo pacman -Syyu"
+alias search="sudo pacman -Ss"
+alias search-local="sudo pacman -Qs"
+alias pkg-info="sudo pacman -Qi"
+alias local-install="sudo pacman -U"
+alias clr-cache="sudo pacman -Scc"
+alias unlock="sudo rm /var/lib/pacman/db.lck"
+alias remove="sudo pacman -R"
+alias autoremove="sudo pacman -Rns"
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# This must remain the last string on this file
+eval "$(direnv hook zsh)"
